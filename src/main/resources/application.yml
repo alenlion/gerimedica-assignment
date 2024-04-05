@@ -1,0 +1,18 @@
+spring:
+    application:
+        name: gerimedica-assignment
+    datasource:
+        url: jdbc:h2:mem:gerimedicadb
+        username: sa
+        password:
+        driverClassName: org.h2.Driver
+    jpa:
+        show-sql: true
+        database-platform: org.hibernate.dialect.H2Dialect
+        hibernate:
+            ddl-auto: update
+    h2:
+        console:
+            enabled: true
+server:
+    port: 5050
